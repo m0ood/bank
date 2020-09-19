@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Регистрация</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+<header th:insert="blocks/header :: header"></header>
+<form action="/singup" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+        <label>Имя</label>
+        <input type="text" class="form-control" name="firstName" placeholder="Введите ваше имя" required="">
+        <label>Фамилия</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Введите вашу фамилию" required="">
+        <label>Логин</label>
+        <input type="text" class="form-control" name="Login" placeholder="Введите логин" required="">
+        <label>Пароль</label>
+        <input type="password" class="form-control" name="Password" placeholder="Введите пароль" required="">
+            <button class="btn btn-success" type="submit">Зарегистрироваться</button>
+
+</form>
+
+</body>
+</html>

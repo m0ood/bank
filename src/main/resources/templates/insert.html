@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Пополнение</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+<header th:insert="blocks/header1 :: header1"></header>
+<div class="col-md-8 order-md-1">
+    <form action="/insert" method="post">
+        <label>Сумма для пополнения</label>
+        <input type="text" class="form-control" name="Money" placeholder="Введите сумму" required="">
+        <button class="btn btn-success" type="submit">Пополнить</button>
+    </form>
+</div>
+</body>
+</html>
